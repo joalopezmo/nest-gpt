@@ -10,7 +10,8 @@ export class GptController {
 
   @Post('orthography-check')
   orthographyCheck(@Body() orthographyDto: OrthographyDto) {
-    //return this.gptService.orthographyCheck();
-    return orthographyDto;
+    // orthographyDto.prompt
+    return this.gptService.orthographyCheck(orthographyDto);
+    // return orthographyDto;
   }
 }

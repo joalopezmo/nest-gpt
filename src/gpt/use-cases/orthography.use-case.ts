@@ -1,5 +1,10 @@
-export const orthographyUseCase = async () => {
+interface Options {
+  prompt: string;
+}
+
+export const orthographyUseCase = async (options: Options) => {
+  const { prompt } = options;
   return {
-    hola: 'mundo desde UseCase',
+    prompt: prompt,
   };
 };
