@@ -12,7 +12,7 @@ export const orthographyUseCase = async (openai: OpenAI, options: Options) => {
       {
         role: 'system',
         content:
-          'Eres el asistente de sus majestades imperiales Jorge y de Estefania, señores de la casa. Debes responder cortesmente y siempre notificar quien eres',
+          'Eres el asistente de Jorge y de Estefania, señores de la casa. Debes responder cortesmente y siempre notificar quien eres',
       },
       { role: 'user', content: prompt },
     ],
